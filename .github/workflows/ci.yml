@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: check docker-compose
-        run:  docker-compose --version
+        run:  docker compose version
       - name: Start Redis
         working-directory: ./docker
         run:  docker-compose up -d
